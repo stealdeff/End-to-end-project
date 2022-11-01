@@ -4,24 +4,31 @@ import Interfaces.Button;
 import Interfaces.Select;
 import Interfaces.TextField;
 
+import java.io.FileWriter;
+import java.io.IOException;
+
 public class WindowsFactory implements Factory {
-    public WindowsFactory()
-    {
-        System.out.println("Creating gui factory for Windows OS");
+    FileWriter out=new FileWriter("C:\\Users\\ykamn\\IdeaProjects\\sh\\AbstractFactory\\src\\File.txt");
+    public WindowsFactory() throws IOException {
+        out.write("Creating gui factory for Windows OS");
+        out.close();
     }
 
-    public Button createButton() {
-        System.out.println("Creating Button for Windows OS");
+    public Button createButton() throws IOException {
+        out.write("Creating Button for Windows OS");
+        out.close();
         return new WButton();
     }
 
-    public TextField createTextField() {
-        System.out.println("Creating TextField for Windows OS");
+    public TextField createTextField() throws IOException {
+        out.write("Creating TextField for Windows OS");
+        out.close();
         return new WTextField();
     }
 
-    public Select createSelect() {
-        System.out.println("Creating Select for Windows OS");
+    public Select createSelect() throws IOException {
+        out.write("Creating Select for Windows OS");
+        out.close();
         return new WSelect();
     }
 }

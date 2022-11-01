@@ -1,1 +1,8 @@
-4 78 
+- Input ----------------
+111 
+5 
+76 
+- Encoded --------------
+Zkt4e09FTVhPVVJEQkJST0JUZD4=
+- Decoded --------------
+123-12

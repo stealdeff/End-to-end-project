@@ -11,15 +11,31 @@ public class Main
         FileReader fr = new FileReader(fin);
         BufferedReader reader = new BufferedReader(fr);
         FileWriter out=new FileWriter("C:\\Users\\ykamn\\IdeaProjects\\sh\\src\\output.txt");
+        DataSourceDecorator encoded = new CompressionDecorator(
+                new EncryptionDecorator(
+                        new FileDataSource("C:\\Users\\ykamn\\IdeaProjects\\sh\\src\\output.txt")));
         String line = reader.readLine();
-        //String []l = line.split("\\s");
+        DataSource plain = new FileDataSource("C:\\Users\\ykamn\\IdeaProjects\\sh\\src\\output.txt");
+        encoded.writeData(line);
+        out.write("- Input ----------------");
         while (line != null)
         {
-            out.write(String.valueOf(Calculator.RPN_to_answer((Calculator.expresionToReverse_poland_notation(line.split("\\s")))))+" ");
+            int answer=Calculator.RPN_to_answer((Calculator.expresionToReverse_poland_notation(line.split("\\s"))));
+
+            out.write("\n");
+            out.write(String.valueOf(answer)+" ");
             line = reader.readLine();
+
         }
-
-
+        out.write("\n");
+        out.write("- Encoded --------------");
+        out.write("\n");
+        out.write(plain.readData());
+        out.write("\n");
+        out.write("- Decoded --------------");
+        out.write("\n");
+        out.write(encoded.readData());
+        out.write("\n");
         out.close();
     }
 }

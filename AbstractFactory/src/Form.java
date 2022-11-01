@@ -3,6 +3,9 @@ import Interfaces.Factory;
 import Interfaces.Select;
 import Interfaces.TextField;
 
+import java.io.FileWriter;
+import java.io.IOException;
+
 public class Form {
     private  final TextField  customers_name;
 private final Select programming_language;
@@ -21,8 +24,8 @@ private  final Button order_a_project;
         order_a_project1 = order_a_project;
         this.order_a_project = order_a_project1;
     }
-    public Form(Factory factory)
-    {
+    public Form(Factory factory) throws IOException {
+        FileWriter out=new FileWriter("C:\\Users\\ykamn\\IdeaProjects\\sh\\AbstractFactory\\src\\File.txt");
         Button order_a_project1;
         Select programming_language1;
         TextField customers_name1;
@@ -32,7 +35,7 @@ private  final Button order_a_project;
         programming_language1 = programming_language1;
         order_a_project1 = null;
         order_a_project1 = order_a_project1;
-        System.out.println("Creating order coffee form");
+        out.write("Creating order form");
         customers_name1 = factory.createTextField();
         customers_name = customers_name1;
         programming_language1 = factory.createSelect();

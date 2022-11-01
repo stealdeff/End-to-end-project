@@ -7,27 +7,34 @@ import Mac_OS_classes.MacButton;
 import Mac_OS_classes.MacTextField;
 import Mac_OS_classes.MacSelect;
 import java.awt.*;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class MacFactory implements Factory {
-    public MacFactory() {
-        System.out.println("Creating gui factory for macOS");
+    FileWriter out=new FileWriter("C:\\Users\\ykamn\\IdeaProjects\\sh\\AbstractFactory\\src\\File.txt");
+    public MacFactory() throws IOException {
+        out.write("Creating gui factory for macOS");
+        out.close();
     }
 
     @Override
-    public Button createButton() {
-        System.out.println("Creating Button for macOS");
+    public Button createButton() throws IOException {
+        out.write("Creating Button for macOS");
+        out.close();
         return new MacButton();
     }
 
     @Override
-    public TextField createTextField() {
-        System.out.println("Creating TextField for macOS");
+    public TextField createTextField() throws IOException {
+        out.write("Creating TextField for macOS");
+        out.close();
         return new MacTextField();
     }
 
     @Override
-    public Select createSelect() {
-        System.out.println("Creating Select for macOS");
+    public Select createSelect() throws IOException {
+        out.write("Creating Select for macOS");
+        out.close();
         return new MacSelect();
     }
 }
