@@ -14,13 +14,20 @@ public class Main
         //DataSourceDecorator encoded_input = new CompressionDecorator(
         //new EncryptionDecorator(
         //new FileDataSource("C:\\Users\\ykamn\\IdeaProjects\\sh\\src\\input.txt")));
+        System.out.println("Введите тип файла, который нужно создать:");
+
+
+
+
+
         String line = reader.readLine();
         DataSource plain_output = new FileDataSource("C:\\Users\\ykamn\\IdeaProjects\\sh\\src\\output.txt");
         //DataSource plain_input = new FileDataSource("C:\\Users\\ykamn\\IdeaProjects\\sh\\src\\input.txt");
         //encoded_input.writeData(line);
         encoded_output.writeData(line);
         out.write("- Input ----------------");
-        while (line != null) {
+        while (line != null)
+        {
             int answer = Calculator.RPN_to_answer((Calculator.expresionToReverse_poland_notation(line.split("\\s"))));
             out.write("\n");
             out.write(String.valueOf(answer) + " ");

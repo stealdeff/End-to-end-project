@@ -19,18 +19,17 @@ public class FileDataSource implements DataSource {
 
     @Override
 
-        public String readData() throws FileNotFoundException {
-
-        File fin = new File(name);
-        FileReader fr = new FileReader(fin);
-        String line = null;
-        try (BufferedReader reader = new BufferedReader(fr)) {
-
-            line = reader.readLine();
+        public String readData() throws FileNotFoundException
+    {
+        char[] buffer = null;
+        File file = new File(name);
+        try (FileReader reader = new FileReader(file)) {
+            buffer = new char[(int) file.length()];
+            reader.read(buffer);
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
-        return new String(line);
+        return new String(buffer);
+    }
 
     }
-}
