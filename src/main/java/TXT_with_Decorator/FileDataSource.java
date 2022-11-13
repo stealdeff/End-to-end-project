@@ -1,3 +1,7 @@
+package TXT_with_Decorator;
+
+import TXT_with_Decorator.DataSource;
+
 import java.io.*;
 public class FileDataSource implements DataSource {
     private String name;

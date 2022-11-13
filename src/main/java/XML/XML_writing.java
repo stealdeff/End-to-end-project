@@ -1,21 +1,20 @@
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
+package XML;
+
+import Main_and_Calc.Calculator;
+import org.testng.reporters.jq.Main;
 import org.w3c.dom.Document;
-import org.w3c.dom.NodeList;
-import org.w3c.dom.Node;
 import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
-import java.util.Scanner;
 
-public class XML_writing {
-
+public class XML_writing extends Main {
 public static int res;
-    public static int main(int o) throws ParserConfigurationException {
+    public static int main() throws ParserConfigurationException {
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 
@@ -26,15 +25,14 @@ public static int res;
             Document doc = dBuilder.parse(fXmlFile);
             doc.getDocumentElement().normalize();
             NodeList nList = doc.getElementsByTagName("String");
-            System.out.println("----------------------------");
+
             for (int temp = 0; temp < nList.getLength(); temp++) {
                 Node nNode = nList.item(temp);
                 if (nNode.getNodeType() == Node.ELEMENT_NODE) {
                     Element eElement = (Element) nNode;
                     System.out.println("String : " + eElement.getElementsByTagName("string").item(0).getTextContent());
                     String k = eElement.getElementsByTagName("string").item(0).getTextContent();
-                    res = Calculator.RPN_to_answer(Calculator.expresionToReverse_poland_notation(k.split("\\s")));
-
+                    res= Calculator.RPN_to_answer(Calculator.expresionToReverse_poland_notation(k.split("\\s")));
                 }
 
             }
