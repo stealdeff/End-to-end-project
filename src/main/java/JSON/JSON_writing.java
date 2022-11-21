@@ -1,23 +1,22 @@
 package JSON;
 
-import Main_and_Calc.Calculator;
+import Main_and_Calc.Main;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.FileWriter;
 import java.io.PrintWriter;
 
-public class JSON_writing
+public class JSON_writing extends Main
 {
-    public static void main(String[] args)
+    public static void main()
     {
         String path = "output.json";
         JSONObject json2 = new JSONObject();
         try {
-            String k=JSON_reading.main();
-            int res= Calculator.RPN_to_answer(Calculator.expresionToReverse_poland_notation(k.split("\\s")));
-            String r=String.valueOf(res);
-        json2.put("Answer",r);
+        JSON_reading.main();
+        int res=JSON_reading.res;
+            json2.put("Answer",String.valueOf(res));
         } catch (JSONException e)
         {
             e.printStackTrace();

@@ -1,6 +1,6 @@
 package Main_and_Calc;
 
-import Main_and_Calc.Calculator;
+import JSON.JSON_writing;
 import TXT_with_Decorator.*;
 import XML.Result_in_XML;
 import XML.XML_reading;
@@ -10,6 +10,7 @@ import javax.xml.parsers.ParserConfigurationException;
 import java.io.*;
 import java.util.Scanner;
 public class Main {
+    public static String line;
     public static void main(String[] args) throws IOException, ParserConfigurationException {
         Scanner cin = new Scanner(System.in);
         System.out.println("Введите тип файла, который нужно создать:");
@@ -22,7 +23,7 @@ public class Main {
             DataSourceDecorator encoded_output = new CompressionDecorator(
                     new EncryptionDecorator(
                             new FileDataSource("C:\\Users\\ykamn\\IdeaProjects\\sh\\src\\output.txt")));
-            String line = reader.readLine();
+             line = reader.readLine();
             DataSource plain_output = new FileDataSource("C:\\Users\\ykamn\\IdeaProjects\\sh\\src\\output.txt");
             if (line != null) {
                 encoded_output.writeData(line);
@@ -53,7 +54,7 @@ public class Main {
             Result_in_XML.main();
         } else if (answ.trim().equalsIgnoreCase("json") || answ.trim().equalsIgnoreCase("js"))
         {
-
+            JSON_writing.main();
 
         }
 
