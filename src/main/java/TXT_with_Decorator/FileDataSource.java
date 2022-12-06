@@ -1,17 +1,15 @@
 package TXT_with_Decorator;
 
-import TXT_with_Decorator.DataSource;
-
 import java.io.*;
 public class FileDataSource implements DataSource {
-    private String name;
+    private static String name;
     public FileDataSource(String name)
     {
         this.name = name;
     }
 
     @Override
-    public void writeData(String data)
+    public  void writeData(String data)
     {
         File file = new File(name);
         try (FileOutputStream fos = new FileOutputStream(file)) {
@@ -23,7 +21,7 @@ public class FileDataSource implements DataSource {
 
     @Override
 
-        public String readData() throws FileNotFoundException
+        public  String readData() throws FileNotFoundException
     {
         char[] buffer = null;
         File file = new File(name);

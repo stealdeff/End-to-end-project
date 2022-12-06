@@ -40,5 +40,9 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.3.23" level="project" />
     <orderEntry type="library" name="ejlchina.data.gson" level="project" />
     <orderEntry type="library" name="net.objecthunter.exp4j" level="project" />
+    <orderEntry type="library" name="jar_files" level="project" />
+    <orderEntry type="library" name="jar_files (1)" level="project" />
+    <orderEntry type="library" name="jar_files (2)" level="project" />
+    <orderEntry type="library" name="junrar-7.5.4" level="project" />
   </component>
 </module>

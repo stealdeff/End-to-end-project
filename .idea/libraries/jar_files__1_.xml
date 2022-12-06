@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="jar_files (1)">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/jar_files (1).zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <NATIVE>
+      <root url="jar://$USER_HOME$/Downloads/jar_files.zip!/" />
+    </NATIVE>
+    <SOURCES />
+    <excluded>
+      <root url="jar://$USER_HOME$/Downloads/jar_files (1).zip!/" />
+    </excluded>
+  </library>
+</component>
