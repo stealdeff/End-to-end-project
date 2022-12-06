@@ -16,7 +16,7 @@ public class Main {
         System.out.println("Введите тип файла, который нужно создать:");
         String answ = cin.next();
         if (answ.trim().equalsIgnoreCase("txt")) {
-            File fin = new File("C:\\Users\\ykamn\\IdeaProjects\\sh\\src\\input.txt");
+            File fin = new File("C:\\Users\\ykamn\\IdeaProjects\\sh\\src\\main\\java\\input.txt");
             FileReader fr = new FileReader(fin);
             BufferedReader reader = new BufferedReader(fr);
             FileWriter out = new FileWriter("C:\\Users\\ykamn\\IdeaProjects\\sh\\src\\output.txt");
