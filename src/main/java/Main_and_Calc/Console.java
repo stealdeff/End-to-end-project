@@ -10,11 +10,12 @@ import javax.xml.parsers.ParserConfigurationException;
 import java.io.*;
 import java.util.Scanner;
 
-public class Main {
+public class Console {
     public static String line;
+
     public static void main(String[] args) throws IOException, ParserConfigurationException {
-       // var app=new GUI();
-       // app.setVisible(true);
+        var app=new GUI();
+        app.setVisible(true);
         Scanner cin = new Scanner(System.in);
         System.out.println("Введите тип файла, который нужно создать:");
         String answ = cin.next();
@@ -51,7 +52,6 @@ public class Main {
             out.close();
 
         } else if (answ.trim().equalsIgnoreCase("xml")) {
-            XML_reading xml_reading;
             XML_reading.main();
             XML_writing.main();
             Result_in_XML.main();

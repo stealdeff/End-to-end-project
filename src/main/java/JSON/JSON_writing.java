@@ -1,13 +1,13 @@
 package JSON;
 
-import Main_and_Calc.Main;
+import Main_and_Calc.Console;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.FileWriter;
 import java.io.PrintWriter;
 
-public class JSON_writing extends Main
+public class JSON_writing extends Console
 {
     public static void main()
     {

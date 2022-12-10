@@ -1,8 +1,8 @@
 package Main_and_Calc;
 import java.util.regex.Pattern;
-public class RegularExpression extends Main
+public class RegularExpression extends Console
 {
-    public static final Pattern P1 = Pattern.compile(Main.line);
+    public static final Pattern P1 = Pattern.compile(Console.line);
     public static String res;
     private static final Pattern P2 = Pattern.compile("-?\\d+(?:\\.\\d+(?:E\\d+)?)?(\\s*[-+/\\*]\\s+-?\\d+(?:\\.\\d+(?:E\\d+)?)?)+");
     public static String regular()
