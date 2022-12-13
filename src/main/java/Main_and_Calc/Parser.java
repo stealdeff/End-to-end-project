@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class Parser
 {
-    private HashMap<String, Double> variables;
+    private static HashMap<String, Double> variables;
 
     public Parser()
     {
@@ -16,7 +16,7 @@ public class Parser
         variables.put(variableName, variableValue);
     }
 
-    public Double getVariable(String variableName)
+    public static Double getVariable(String variableName)
     {
         if (!variables.containsKey(variableName)) {
             System.err.println( "Error: Try get unexists variable '"+variableName+"'" );
@@ -25,7 +25,7 @@ public class Parser
         return variables.get(variableName);
     }
 
-    public double Parse(String s) throws Exception
+    public static double Parse(String s) throws Exception
     {
         Result result = PlusMinus(s);
         if (!result.rest.isEmpty()) {
@@ -35,7 +35,7 @@ public class Parser
         return result.acc;
     }
 
-    private Result PlusMinus(String s) throws Exception
+    public static  Result PlusMinus(String s) throws Exception
     {
         Result current = MulDiv(s);
         double acc = current.acc;
@@ -56,7 +56,7 @@ public class Parser
         return new Result(acc, current.rest);
     }
 
-    private Result Bracket(String s) throws Exception
+    private static Result Bracket(String s) throws Exception
     {
         char zeroChar = s.charAt(0);
         if (zeroChar == '(') {
@@ -71,7 +71,7 @@ public class Parser
         return FunctionVariable(s);
     }
 
-    private Result FunctionVariable(String s) throws Exception
+    private static Result FunctionVariable(String s) throws Exception
     {
         String f = "";
         int i = 0;
@@ -90,7 +90,7 @@ public class Parser
         return Num(s);
     }
 
-    private Result MulDiv(String s) throws Exception
+    private static Result MulDiv(String s) throws Exception
     {
         Result current = Bracket(s);
 
@@ -115,7 +115,7 @@ public class Parser
         }
     }
 
-    private Result Num(String s) throws Exception
+    private static Result Num(String s) throws Exception
     {
         int i = 0;
         int dot_cnt = 0;
@@ -141,7 +141,7 @@ public class Parser
         return new Result(dPart, restPart);
     }
 
-    private Result processFunction(String func, Result r)
+    private static Result processFunction(String func, Result r)
     {
         if (func.equals("sin")) {
             return new Result(Math.sin(Math.toRadians(r.acc)), r.rest);
