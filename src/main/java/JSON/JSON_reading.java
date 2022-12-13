@@ -1,7 +1,9 @@
 package JSON;
+
 import Main_and_Calc.Calculator;
 import org.json.JSONException;
 import org.json.JSONObject;
+
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.util.Scanner;
@@ -16,7 +18,7 @@ public class JSON_reading
                         Scanner cin=new Scanner(System.in);
                         System.out.println("Введите арифметическое выражение, которое будет выведено в json файле: ");
                          String k=cin.next();
-                         res= Calculator.RPN_to_answer(Calculator.expresionToReverse_poland_notation(k.split("\\s")));
+                         res= Calculator.RPN_to_answer(Calculator.expressionToReverse_poland_notation(k.split("\\s")));
                         json.put("Arithmetical expression",k);
                 } catch (JSONException e) {
                         e.printStackTrace();

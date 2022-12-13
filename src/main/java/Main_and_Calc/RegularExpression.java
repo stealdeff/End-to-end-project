@@ -11,7 +11,7 @@ public class RegularExpression extends Console
       if (P1.equals(P2))
       {
 
-          int k=Calculator.RPN_to_answer(Calculator.expresionToReverse_poland_notation(P1.split("\\s")));
+          int k=Calculator.RPN_to_answer(Calculator.expressionToReverse_poland_notation(P1.split("\\s")));
        res=Integer.toString(k);
       }
       else{return e;}

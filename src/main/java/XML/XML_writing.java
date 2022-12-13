@@ -1,7 +1,7 @@
 package XML;
 
 import Main_and_Calc.Calculator;
-import org.testng.reporters.jq.Main;
+import Main_and_Calc.Console;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -12,7 +12,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
 
-public class XML_writing extends Main {
+public class XML_writing extends Console {
 public static int res;
     public static int main() throws ParserConfigurationException {
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
@@ -32,7 +32,7 @@ public static int res;
                     Element eElement = (Element) nNode;
                     System.out.println("String : " + eElement.getElementsByTagName("string").item(0).getTextContent());
                     String k = eElement.getElementsByTagName("string").item(0).getTextContent();
-                    res= Calculator.RPN_to_answer(Calculator.expresionToReverse_poland_notation(k.split("\\s")));
+                    res= Calculator.RPN_to_answer(Calculator.expressionToReverse_poland_notation(k.split("\\s")));
                 }
 
             }

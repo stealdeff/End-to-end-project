@@ -5,6 +5,7 @@ import TXT_with_Decorator.*;
 import XML.Result_in_XML;
 import XML.XML_reading;
 import XML.XML_writing;
+
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.*;
 import java.util.Scanner;
@@ -17,8 +18,6 @@ public class Console {
         Scanner cin = new Scanner(System.in);
         System.out.println("Введите тип файла, который нужно создать:");
         String answ = cin.next();
-        System.out.println("Как вы хотите посчитать выражение: консольным калькулятором(с) или графическим(g):");
-        String an = cin.next();
         if (answ.trim().equalsIgnoreCase("txt"))
         {
             File fin = new File("C:\\Users\\ykamn\\IdeaProjects\\sh\\src\\main\\java\\input.txt");
@@ -36,7 +35,7 @@ public class Console {
             out.write("- Input ----------------");
 
                while (line != null) {
-                   int answer = Calculator.RPN_to_answer((Calculator.expresionToReverse_poland_notation(line.split("\\s"))));
+                   int answer = Calculator.RPN_to_answer((Calculator.expressionToReverse_poland_notation(line.split("\\s"))));
                    out.write("\n");
                    out.write(answer + " ");
                    line = reader.readLine();

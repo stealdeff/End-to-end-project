@@ -1,6 +1,6 @@
 package XML;
 
-import org.testng.reporters.jq.Main;
+import Main_and_Calc.Console;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -14,7 +14,7 @@ import javax.xml.transform.stream.StreamResult;
 import java.io.File;
 import java.util.Scanner;
 
-public class XML_reading extends Main {
+public class XML_reading extends Console {
 
     public static void main() {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();

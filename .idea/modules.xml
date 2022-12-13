@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AbstractFactory/AbstractFactory.iml" filepath="$PROJECT_DIR$/AbstractFactory/AbstractFactory.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sh.iml" filepath="$PROJECT_DIR$/sh.iml" />
     </modules>
   </component>
 </project>

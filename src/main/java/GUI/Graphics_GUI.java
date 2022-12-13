@@ -22,7 +22,7 @@ public class Graphics_GUI extends Console {
             line = reader.readLine();
             //DataSource plain_output = new FileDataSource("C:\\Users\\ykamn\\IdeaProjects\\sh\\src\\output.txt");
             while (line != null) {
-                answer = Calculator.RPN_to_answer((Calculator.expresionToReverse_poland_notation(line.split("\\s"))));
+                answer = Calculator.RPN_to_answer((Calculator.expressionToReverse_poland_notation(line.split("\\s"))));
                 out.write("\n");
                 out.write(answer + " ");
                 line = reader.readLine();

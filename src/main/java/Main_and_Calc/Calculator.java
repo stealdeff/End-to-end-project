@@ -3,7 +3,7 @@ package Main_and_Calc;
 import  java.util.Stack;
 public class Calculator
 {
-    public static String expresionToReverse_poland_notation(String []expr)
+    public static String expressionToReverse_poland_notation(String []expr)
     {
         String current = "";
         Stack<Character> stack = new Stack<>();
