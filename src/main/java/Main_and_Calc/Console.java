@@ -5,7 +5,6 @@ import TXT_with_Decorator.*;
 import XML.Result_in_XML;
 import XML.XML_reading;
 import XML.XML_writing;
-
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.*;
 import java.util.Scanner;
@@ -14,12 +13,14 @@ public class Console {
     public static String line;
 
     public static void main(String[] args) throws IOException, ParserConfigurationException {
-        var app=new GUI();
-        app.setVisible(true);
+
         Scanner cin = new Scanner(System.in);
         System.out.println("Введите тип файла, который нужно создать:");
         String answ = cin.next();
-        if (answ.trim().equalsIgnoreCase("txt")) {
+        System.out.println("Как вы хотите посчитать выражение: консольным калькулятором(с) или графическим(g):");
+        String an = cin.next();
+        if (answ.trim().equalsIgnoreCase("txt"))
+        {
             File fin = new File("C:\\Users\\ykamn\\IdeaProjects\\sh\\src\\main\\java\\input.txt");
             FileReader fr = new FileReader(fin);
             BufferedReader reader = new BufferedReader(fr);
@@ -33,23 +34,26 @@ public class Console {
                 encoded_output.writeData(line);
             }
             out.write("- Input ----------------");
-            while (line != null) {
-                int answer = Calculator.RPN_to_answer((Calculator.expresionToReverse_poland_notation(line.split("\\s"))));
-                out.write("\n");
-                out.write(answer + " ");
-                line = reader.readLine();
-            }
 
-            out.write("\n");
-            out.write("- Decoded --------------");
-            out.write("\n");
-            out.write(plain_output.readData());
-            out.write("\n");
-            out.write("- Encoded --------------");
-            out.write("\n");
-            out.write(encoded_output.readData());
-            out.write("\n");
-            out.close();
+               while (line != null) {
+                   int answer = Calculator.RPN_to_answer((Calculator.expresionToReverse_poland_notation(line.split("\\s"))));
+                   out.write("\n");
+                   out.write(answer + " ");
+                   line = reader.readLine();
+               }
+
+
+               out.write("\n");
+               out.write("- Decoded --------------");
+               out.write("\n");
+               out.write(plain_output.readData());
+               out.write("\n");
+               out.write("- Encoded --------------");
+               out.write("\n");
+               out.write(encoded_output.readData());
+               out.write("\n");
+               out.close();
+
 
         } else if (answ.trim().equalsIgnoreCase("xml")) {
             XML_reading.main();

@@ -2,8 +2,30 @@
   <library name="junrar-7.5.4">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../../../../junrar-7.5.4.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../OS/javafx-sdk-19/lib" />
+      <root url="file://$PROJECT_DIR$/../../../../OS/javafx-sdk-19/lib" />
+      <root url="jar://$PROJECT_DIR$/../../../../OS/javafx-sdk-19/javafx-swt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../OS/javafx-sdk-19/javafx.base.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../OS/javafx-sdk-19/javafx.controls.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../OS/javafx-sdk-19/javafx.fxml.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../OS/javafx-sdk-19/javafx.graphics.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../OS/javafx-sdk-19/javafx.media.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../OS/javafx-sdk-19/javafx.swing.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../OS/javafx-sdk-19/javafx.web.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../../../OS/javafx-sdk-19" />
+      <root url="jar://$PROJECT_DIR$/../../../../OS/javafx-sdk-19/src.zip!/javafx.base" />
+      <root url="jar://$PROJECT_DIR$/../../../../OS/javafx-sdk-19/src.zip!/javafx.controls" />
+      <root url="jar://$PROJECT_DIR$/../../../../OS/javafx-sdk-19/src.zip!/javafx.fxml" />
+      <root url="jar://$PROJECT_DIR$/../../../../OS/javafx-sdk-19/src.zip!/javafx.graphics" />
+      <root url="jar://$PROJECT_DIR$/../../../../OS/javafx-sdk-19/src.zip!/javafx.media" />
+      <root url="jar://$PROJECT_DIR$/../../../../OS/javafx-sdk-19/src.zip!/javafx.swing" />
+      <root url="jar://$PROJECT_DIR$/../../../../OS/javafx-sdk-19/src.zip!/javafx.web" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../../../../OS/javafx-sdk-19/lib" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../../../../OS/javafx-sdk-19/lib" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../../../../OS/javafx-sdk-19" recursive="false" type="SOURCES" />
   </library>
 </component>

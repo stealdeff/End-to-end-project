@@ -1,7 +1,6 @@
-package Main_and_Calc;
+package GUI;
 
 import javax.swing.*;
-import javax.xml.parsers.ParserConfigurationException;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -12,6 +11,7 @@ class GUI extends JFrame
         private JRadioButton txt = new JRadioButton("TxT file will be created");
         private JRadioButton xml = new JRadioButton("XML file will be created");
         private JRadioButton json = new JRadioButton("JSon file will be created");
+
         private int width = 300;
         private Image img;
 
@@ -29,6 +29,7 @@ class GUI extends JFrame
             group.add(json);
             container.add(txt);
             txt.setSelected(false);
+
             container.add(json);
             container.add(xml);
             setSize(width, height);
@@ -42,7 +43,7 @@ class GUI extends JFrame
         class ButtonEvent implements ActionListener {
 
 
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed (ActionEvent e)  {
                 Graphics_GUI t=new Graphics_GUI();
                 String message = "";
                 message += "Button was pressed\n";
@@ -59,20 +60,12 @@ class GUI extends JFrame
 
                 } else if (xml.isSelected()) {
                     message += "XML file will be created";
-                    try {
-                        t.XML();
-                    } catch (ParserConfigurationException ex) {
-                        throw new RuntimeException(ex);
-                    }
+                    t.XML();
 
                 } else if (json.isSelected())
                 {
                     message += "JSON file will be created";
-                    try {
-                        t.JSON();
-                    } catch (IOException ex) {
-                        throw new RuntimeException(ex);
-                    }
+                    t.JSON();
                 }
 
 

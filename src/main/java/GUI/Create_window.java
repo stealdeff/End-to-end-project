@@ -1,6 +1,8 @@
-package Main_and_Calc;
+package GUI;
 
-public class Create_window extends GUI{
+import GUI.GUI;
+
+public class Create_window extends GUI {
     public static void main(String [] args)
     {
         var app=new GUI();

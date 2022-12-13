@@ -26,7 +26,9 @@ public class XML_reading extends Main {
             doc.appendChild(rootElement);
             Scanner cin=new Scanner(System.in);
             System.out.println("Введите арифметические операции, которые будут добавленв в XML-файл: ");
+
             String k;
+
             k = cin.next();
             rootElement.appendChild(getString(doc,"String",k,"input"));
 
