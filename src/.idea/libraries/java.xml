@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="java">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/main/java/OUT.zip!/" />
+      <root url="jar://$PROJECT_DIR$/main/java/OUT_XML.zip!/" />
+      <root url="jar://$PROJECT_DIR$/main/java/OUT_JSON.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../OS/java-json.jar.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,6 @@
+- Input ----------------
+1 
+- Decoded --------------
+Zkt4ezJrVkRCQkZwQktOPg==
+- Encoded --------------
+3-2
