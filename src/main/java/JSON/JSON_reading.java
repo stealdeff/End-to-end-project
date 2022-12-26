@@ -23,7 +23,6 @@ public class JSON_reading
                 } catch (JSONException e) {
                         e.printStackTrace();
                 }
-
                 try (PrintWriter out = new PrintWriter(new FileWriter("input.json"))) {
                         out.write(json.toString());
                 } catch (Exception e) {
