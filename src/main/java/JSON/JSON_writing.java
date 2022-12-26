@@ -9,7 +9,7 @@ import java.io.PrintWriter;
 
 public class JSON_writing extends Console
 {
-    public static void main()
+    public static Object main()
     {
         String path = "output.json";
         JSONObject json2 = new JSONObject();
@@ -28,5 +28,6 @@ public class JSON_writing extends Console
             e.printStackTrace();
         }
 
+        return null;
     }
 }

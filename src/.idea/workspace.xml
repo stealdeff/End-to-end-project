@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a50c390-788d-40d0-9d74-35b7eed1c613" name="Changes" comment="//FiletxtTests were added">
-      <change afterPath="$PROJECT_DIR$/main/java/TESt.XML" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/java/XML/XML_readingTest.java" afterDir="false" />
+    <list default="true" id="0a50c390-788d-40d0-9d74-35b7eed1c613" name="Changes" comment="//FileXMLTests were added">
+      <change afterPath="$PROJECT_DIR$/main/java/JSON/JSON_readingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/java/TEST.JSON" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/java/XML/XML_reading.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/XML/XML_reading.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/GUI/Graphics_GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/GUI/Graphics_GUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/Main_and_Calc/Console.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Main_and_Calc/Console.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/XML/XML_reading.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/XML/XML_reading.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/JSON/JSON_reading.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/JSON/JSON_reading.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,9 +59,9 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="JSON" />
       <recent name="XML" />
       <recent name="TXT_with_Decorator" />
-      <recent name="JSON" />
       <recent name="Main_and_Calc" />
     </key>
   </component>
@@ -112,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672061802369</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="//FileXMLTests were added">
+      <created>1672064115917</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672064115917</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -130,6 +134,7 @@
     <MESSAGE value="//CalculatorTests were added" />
     <MESSAGE value="//ParserTests were added" />
     <MESSAGE value="//FiletxtTests were added" />
-    <option name="LAST_COMMIT_MESSAGE" value="//FiletxtTests were added" />
+    <MESSAGE value="//FileXMLTests were added" />
+    <option name="LAST_COMMIT_MESSAGE" value="//FileXMLTests were added" />
   </component>
 </project>
