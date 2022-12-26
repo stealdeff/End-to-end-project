@@ -16,7 +16,8 @@ import java.util.Scanner;
 
 public class XML_reading extends Console {
 
-    public static void main() {
+    public static short main() {
+
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder;
         try {
@@ -24,32 +25,28 @@ public class XML_reading extends Console {
             Document doc = builder.newDocument();
             Element rootElement = doc.createElementNS(";", "L");
             doc.appendChild(rootElement);
-            Scanner cin=new Scanner(System.in);
+            Scanner cin = new Scanner(System.in);
             System.out.println("Введите арифметические операции, которые будут добавленв в XML-файл: ");
-
             String k;
-
             k = cin.next();
-            rootElement.appendChild(getString(doc,"String",k,"input"));
-
+            rootElement.appendChild(getString(doc, "String", k, "input"));
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = transformerFactory.newTransformer();
             DOMSource source = new DOMSource(doc);
-
             StreamResult file = new StreamResult(new File("C:\\Users\\ykamn\\IdeaProjects\\sh\\src\\XML_input.xml"));
-
-
             transformer.transform(source, file);
 
             System.out.println("Создание XML файла закончено");
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        return 0;
     }
 
     public static Node getString(Document doc, String id,String k,String a)
     {
-        Element String= doc.createElement("String");
+        Element String=doc.createElement("String");
         String.appendChild(getstringElements(doc,String,"string",k));
         return String;
     }

@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a50c390-788d-40d0-9d74-35b7eed1c613" name="Changes" comment="//FiletxtTests were added">
-      <change beforePath="$PROJECT_DIR$/main/java/TXT_with_Decorator/ReadingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/TXT_with_Decorator/ReadingTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/java/TXT_with_Decorator/Writing.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/TXT_with_Decorator/Writing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/java/TXT_with_Decorator/WritingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/TXT_with_Decorator/WritingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/java/TESt.XML" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/java/XML/XML_readingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/XML/XML_reading.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/XML/XML_reading.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/GUI/Graphics_GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/GUI/Graphics_GUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/Main_and_Calc/Console.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Main_and_Calc/Console.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/XML/XML_reading.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/XML/XML_reading.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +62,7 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="XML" />
       <recent name="TXT_with_Decorator" />
       <recent name="JSON" />
       <recent name="Main_and_Calc" />
@@ -93,7 +98,21 @@
       <option name="project" value="LOCAL" />
       <updated>1672061164327</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="//FiletxtTests were added">
+      <created>1672061766898</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672061766898</updated>
+    </task>
+    <task id="LOCAL-00005" summary="//FiletxtTests were added">
+      <created>1672061802369</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1672061802369</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
