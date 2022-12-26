@@ -19,7 +19,7 @@ class ReadingTest {
         FileReader reader = new FileReader(file);
         buffer = new char[(int) file.length()];
         reader.read(buffer);
-   assertEquals(new String(buffer),Reading.readData(k));
+   assertEquals("Hello",Reading.readData(k));
     }
 
 }

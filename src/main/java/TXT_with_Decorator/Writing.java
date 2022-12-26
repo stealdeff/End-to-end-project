@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class Writing {
     static public  String filename;
-    public  void writeData(String data)
+    public  static void writeData(String data)
     {
         File file = new File(filename);
         try (FileOutputStream fos = new FileOutputStream(file)) {
