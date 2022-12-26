@@ -5,7 +5,7 @@ import java.io.*;
 public class Reading
 {
 
-    public  String readData(String filename) throws FileNotFoundException
+    public static String readData(String filename) throws FileNotFoundException
     {
         char[] buffer = null;
         File file = new File(filename);
