@@ -1,5 +1,6 @@
 package Main_and_Calc;
 
+import GUI.calculator;
 import JSON.JSON_writing;
 import TXT_with_Decorator.*;
 import XML.Result_in_XML;
@@ -18,15 +19,17 @@ public class Console {
         Scanner cin = new Scanner(System.in);
         System.out.println("Введите тип файла, который нужно создать:");
         String answ = cin.next();
+
         if (answ.trim().equalsIgnoreCase("txt"))
         {
             File fin = new File("C:\\Users\\ykamn\\IdeaProjects\\sh\\src\\main\\java\\input.txt");
             FileReader fr = new FileReader(fin);
             BufferedReader reader = new BufferedReader(fr);
-            FileWriter out = new FileWriter("C:\\Users\\ykamn\\IdeaProjects\\sh\\src\\output.txt");
+            FileWriter out = new FileWriter("C:\\Users\\ykamn\\IdeaProjects\\sh\\src\\main\\java\\output.txt");
             DataSourceDecorator encoded_output = new CompressionDecorator(
                     new EncryptionDecorator(
                             new FileDataSource("C:\\Users\\ykamn\\IdeaProjects\\sh\\src\\output.txt")));
+
              line = reader.readLine();
             DataSource plain_output = new FileDataSource("C:\\Users\\ykamn\\IdeaProjects\\sh\\src\\output.txt");
             if (line != null) {
@@ -62,6 +65,9 @@ public class Console {
         {
             JSON_writing.main();
 
+        }
+        else{
+            System.out.println("Создание таких файлов мы не можем себе позволить.");
         }
 
 

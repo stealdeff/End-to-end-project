@@ -6,5 +6,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="java-json.jar" level="project" />
+    <orderEntry type="library" name="io.springfox.core" level="project" />
   </component>
 </module>

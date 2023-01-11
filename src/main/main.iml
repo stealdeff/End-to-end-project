@@ -40,5 +40,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="java-json.jar" level="project" />
+    <orderEntry type="library" name="io.springfox.core" level="project" />
   </component>
 </module>

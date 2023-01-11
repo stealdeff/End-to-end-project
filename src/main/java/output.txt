@@ -1,6 +1,6 @@
 - Input ----------------
-1 
+778 
 - Decoded --------------
-Zkt4ezJrVkRCQkZwQktOPg==
+Zkt4e09FSjMxVVZ5T1JOQkN5UkNteD4+
 - Encoded --------------
-3-2
+1234-456

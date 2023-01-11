@@ -21,7 +21,7 @@ public class calculator extends JFrame implements ActionListener {
 
 
     // main function
-    public static void main(String args[])
+    public static void main()
     {
 
         // create a frame

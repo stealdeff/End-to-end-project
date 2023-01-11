@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a50c390-788d-40d0-9d74-35b7eed1c613" name="Changes" comment="//FileJSONTests were added">
+    <list default="true" id="0a50c390-788d-40d0-9d74-35b7eed1c613" name="Changes" comment="//">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/io_springfox_core.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/java/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/src.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/src.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/JSON/JSON_readingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/JSON/JSON_readingTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/GUI/calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/GUI/calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/Main_and_Calc/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/Main_and_Calc/Console.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/main/main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/GUI/calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/GUI/calculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/Main_and_Calc/Console.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/Main_and_Calc/Console.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/OUT_XML.zip" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/OUT_XML.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/test/test.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,13 +52,16 @@
     &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-19&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/OS/json-20220924.jar&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -135,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672075438500</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="//">
+      <created>1672077685121</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1672077685121</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -155,6 +177,7 @@
     <MESSAGE value="//FiletxtTests were added" />
     <MESSAGE value="//FileXMLTests were added" />
     <MESSAGE value="//FileJSONTests were added" />
-    <option name="LAST_COMMIT_MESSAGE" value="//FileJSONTests were added" />
+    <MESSAGE value="//" />
+    <option name="LAST_COMMIT_MESSAGE" value="//" />
   </component>
 </project>
